@@ -16,9 +16,13 @@ const userSlice = createSlice({
       state.username = '';
       state.name = '';
     },
+    userLogout: (state) =>{
+      state.username = '';
+      state.name = '';
+    }
   },
 });
 
 // Export action dan reducer
-export const { setUser, clearUser } = userSlice.actions;
+export const { setUser, clearUser, userLogout } = userSlice.actions;
 export default userSlice.reducer;
